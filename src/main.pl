@@ -2,6 +2,8 @@
 :- [facts].    % Sólo lectura de hechos
 :- [rules].    % Tus reglas recommend/2, las vamos a reutilizar
 
+:- initialization(main).
+
 main :-
     % Leo cada bloque de datos
     preguntar('intereses', [realista, investigativo, artistico, social, emprendedor, convencional], Intereses),
